@@ -10,14 +10,6 @@ def get_initials(fullname):
 	initials = initials.upper()
 	return initials
 
-
-name = input("What's your name?")
-
-print(get_initials(name))
-
-
-
-#print(get_initials("Ozzy Smith"))
-#print(get_initials("bonnie blair"))
-#print(get_initials("George"))
-#print(get_initials("Daniel Day Lewis"))
+def main ():
+	name = input("What's your name?")
+	print(get_initials(name))

@@ -1,8 +1,9 @@
 from helpers import alphabet_position, rotate_character
+import string
 
 
 
-def encrypt_vig(text, key):
+def encrypt(text, key):
     output = ""
     key_index = 0
     for char in text:
@@ -12,7 +13,11 @@ def encrypt_vig(text, key):
             key_index += 1
     return output
 
+def main ():
+    text = input("Your message?")
+    key = input("Your encryption key?")
+    print(encrypt_vig(text, key))
 
-text = input("Your message?")
-key = input("Your encryption key?")
-print(encrypt_vig(text, key))
+
+if __name__ == '__main__':
+    main()

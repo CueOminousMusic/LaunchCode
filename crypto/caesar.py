@@ -2,8 +2,6 @@ from helpers import alphabet_position, rotate_character
 from sys import argv, exit
 
 
-#print("I know that these are the words the user typed on the command line: ", argv)
-
 def encrypt(text, rot):
     output = ""
     for char in text:
@@ -12,7 +10,6 @@ def encrypt(text, rot):
 
 
 def user_input_is_valid(cl_args):
-    #print(cl_args)
     if len(cl_args) == 2:
         if cl_args[1].isdigit():
             return True
