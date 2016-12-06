@@ -14,8 +14,10 @@ typed_msg=tk.StringVar()
 e1 = tk.Entry(master, width = 30, textvariable = typed_msg)
 e1.grid(row=1, column=0, columnspan=4)
 
-def send_msg (row_index):
-    t1.insert(1.0, typed_msg.get())
+row_index = 0.0
+def send_msg ():
+    t1.insert(row_index, typed_msg.get())
+
 
 
 
